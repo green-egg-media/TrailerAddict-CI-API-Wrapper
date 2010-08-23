@@ -1,0 +1,48 @@
+h1. TrailerAddict.com API Wrapper Library
+
+_For use with "CodeIgniter":http://www.codeigniter.com_
+
+TrailerAddict.com has some cool trailers - and now you can use them in your website with this awesome API wrapper.
+
+h2. Installation
+
+Just drop this TrailerAddict.php file into your libraries folder. Load like so:
+
+@$this->load->library('Traileraddict');@
+
+h2. Configuration
+
+*width*
+
+The width you'd like for the trailers. Defaults to 450.
+
+*count*
+
+The number of trailers you'd like to receive. The default is 1, and maximum is 8.
+
+Methods take a config array, and you can also create an array with default values in _application/config/traileraddict.php_.
+
+h2. Methods
+
+Each method returns an object. Use a print_r to see what data is available from that object.
+
+*get_featured([config])*
+
+Get the latest featured trailers from TrailerAddict.com.
+
+*get_film_trailers(film_name, [config])*
+
+Get trailers for a specific film. If you give the film's proper name, such as "The Dark Knight", the wrapper will attempt to format it for TrailerAddict. Trailer Addict needs the film titles formatted in a specific way ("the-dark-knight" for "The Dark Knight"), so best practice is try and use the TrailerAddict.com version if possible.
+
+*get_actor_trailers(actor_name, [config])*
+
+Same as _get_film_trailers_ but with an actor name. Same concept applies for the actor name as it does for the film name.
+
+*simple_data([url])*
+
+Gets data from a trailer addict page using their simple API. Most pages on TrailerAddict.com can be turned into a data object using this method. Simply take the URL after http://www.traileraddict.com/ and feed it into this function. The object returns data available to use on that page. 
+
+h2. Authors
+
+"Adam Fairholm (Green Egg Media)":http://twitter.com/greeneggmedia
+
