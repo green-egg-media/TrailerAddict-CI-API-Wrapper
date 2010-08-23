@@ -129,7 +129,7 @@ class Traileraddict
 	 * @param	string
 	 * @return	object
 	 */
-	function simple_trailer( $alt_url )
+	function simple_data( $alt_url )
 	{
 		$request = "http://simpleapi.traileraddict.com/".$alt_url;
 
