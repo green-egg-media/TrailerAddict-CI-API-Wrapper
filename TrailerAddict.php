@@ -11,7 +11,7 @@
  * @version 		Version 0.1
  * @author			Adam Fairholm (Green Egg Media)
  * @copyright 		Copyright (c) 2010 Green Egg Media
- * @license 		Attribution-ShareAlike 3.0 Unported http://creativecommons.org/licenses/by-sa/3.0/
+ * @license 		GNU General Public License v3
  * 
  * Wraps API functions for TrailerAddict.com for use with CI. No API key necessary.
  */
